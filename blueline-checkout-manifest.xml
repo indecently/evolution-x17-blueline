@@ -380,7 +380,7 @@
   <project name="packages_apps_Updater" path="packages/apps/Updater" remote="evo" revision="7488b92dda943658dbaa095af8ea3cc67fd1fa79" />
   <project name="packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="evo" groups="pdk-fs,sysui-studio" revision="39aa6bb512f875ef4b7309032f2fac8339ba59c6" />
   <project name="packages_modules_Bluetooth" path="packages/modules/Bluetooth" remote="evo" groups="pdk" revision="00f2fc113148277f1cf976d1df07fd28a00001a2" />
-  <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="evo" groups="pdk-cw-fs,pdk-fs" revision="5c298deab55ce7cfefec3b1cc9c79e9898f669e7" />
+  <project name="xbill9/android_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="github-non-los" groups="pdk-cw-fs,pdk-fs" revision="5c298deab55ce7cfefec3b1cc9c79e9898f669e7" upstream="refs/heads/lineage-24.0" />
   <project name="packages_modules_Permission" path="packages/modules/Permission" remote="evo" groups="pdk-cw-fs,pdk-fs" revision="50bb08a295d6ee0b240a0097b613d2adf14baddc" />
   <project name="packages_modules_Wifi" path="packages/modules/Wifi" remote="evo" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="d300a5c49a0a5594655b63e2f7a9845f787a2cab" />
   <project name="packages_modules_common" path="packages/modules/common" remote="evo" groups="pdk-cw-fs,pdk-fs" revision="3f4367f7d6a3ce865bb73b5e975706324598c881" />
@@ -1304,7 +1304,7 @@
   <project name="vendor_extras" path="vendor/extras" remote="evo" revision="1a97709e05739e0d4b05b37583a01eaa4df7cac8" />
   <project name="vendor_gms" path="vendor/gms" remote="evo" revision="7ca1155fd6c010353c6b18b45173f4d77af285a7" />
   <project name="vendor_gms-mosey" path="vendor/gms-mosey" remote="evo" revision="931dc880a8f4c76b6a55a37cf53b7fd449094e24" />
-  <project name="vendor_google_blueline" path="vendor/google/blueline" remote="evo-devices" groups="local::roomservice" revision="21b4fe5e00a992900436c56821916f6a056550a6" />
+  <project name="its-hecker/proprietary_vendor_google_blueline" path="vendor/google/blueline" remote="github-non-los" groups="local::roomservice" revision="21b4fe5e00a992900436c56821916f6a056550a6" upstream="refs/heads/lineage-24.0" />
   <project name="vendor_google_crosshatch" path="vendor/google/crosshatch" remote="evo-devices" groups="local::roomservice" revision="690e2f05df632e7b5fcd46948747fb47ca3c614e" />
   <project name="vendor_packages_SettingsGoogle" path="vendor/unbundled_google/packages/SettingsGoogle" remote="evo" revision="b2aaa80ee7cbc7c90d6f77b928b6239888539899" />
   <project name="vendor_packages_SystemUIGoogle" path="vendor/unbundled_google/packages/SystemUIGoogle" remote="evo" revision="a72eab0c2785835ff84da79637c4b15129999a4a" />
