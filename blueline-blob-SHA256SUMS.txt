@@ -1,0 +1,6 @@
+138c3dd13fa33db258f83367dbbdc69d427854c29adcf9fb14e31ee7d6d67d3b vendor/google/blueline/proprietary/system_ext/lib64/libsecureuisvc_jni.so
+5bb498461e4c0c7a198702f4a6ab59729d9f6218a49ef4377cddb01cf22f9658 vendor/google/blueline/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.fpc
+02b44be844c30221c6c05a4e369e9c5ee4da98bcef9e81a7f89c33993a35712d vendor/google/blueline/proprietary/vendor/bin/mm-pp-dpps
+a83426e6309f334bea7c8a1b431636115f552d99300a2d7b1e1a58af52214e9d vendor/google/blueline/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so
+e83459fe23dfda6c5950d0542e16be3acb7b76047999f6a71dd7a33919b35d14 vendor/google/blueline/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so
+1bd038d550f8c9c6508c1442044a8bcd715d0c33bbe8c5ae8a76ec37693ce627 vendor/google/blueline/proprietary/vendor/lib64/hw/camera.sdm845.so
