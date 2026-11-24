@@ -56,15 +56,10 @@ done < <(tail -n +2 "$patch_dir/BASES.tsv")
 
 ## Supply vendor blobs and build
 
-The base manifest references the upstream Evolution X vendor repositories.
-The six locally modified proprietary files in the patch archive's
-`OMITTED.txt` are reproduced by fixups in
-`device/google/crosshatch/blueline/extract-files.py` when supplied with matching
-unmodified inputs. Obtain those inputs from an authorized Android 12 Pixel 3
-factory image or an equivalent extraction. Inspect the script's `--help`
-before running it. The extraction has not been independently verified from a
-clean download. Compare the generated vendor makefiles with the patched ones
-because the extractor can regenerate them.
+The base manifest references the vendor sources used by the development
+checkout. Follow [VENDOR-BLOBS.md](VENDOR-BLOBS.md) to recreate the six local
+binary fixups from that pinned vendor repository and verify all six outputs
+against the build inputs. The script preserves the patched vendor makefiles.
 
 Once all dependencies are available, follow [BUILD.md](BUILD.md) for the
 `lineage_blueline-userdebug` OTA build and verification.
