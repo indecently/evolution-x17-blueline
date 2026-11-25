@@ -25,7 +25,7 @@ repo sync -c -j2 --fail-fast
 
 Bring in the Pixel 3 device tree and B1C1 kernel checkout at the paths below. The development tree used [Evolution-X-Devices/device_google_crosshatch](https://github.com/Evolution-X-Devices/device_google_crosshatch) and [Evolution-X-Devices/kernel_google_b1c1](https://github.com/Evolution-X-Devices/kernel_google_b1c1). The patches also touch framework, hardware, build, and system projects. Use the checkout paths and exact base commits in `BASES.tsv` rather than applying patches against arbitrary branch tips. A missing base commit or inaccessible dependency must be resolved before continuing.
 
-Download [device source](blueline-device-source.zip) and [source patches](blueline-source-patches.zip) into a separate directory. Extract the device snapshot into an empty staging directory and use its `device/google/crosshatch` tree as that project's source. If the workspace already has an upstream tree there, replace its contents in a fresh checkout or compare the trees first so deleted upstream files do not remain. Preserve executable permissions when unpacking.
+Download [device source](blueline-device-source.zip), [source patches](blueline-source-patches.zip), and both SHA-256 files into a separate directory. Verify the archives before extraction. Extract the device snapshot into an empty staging directory and use its `device/google/crosshatch` tree as that project's source. If the workspace already has an upstream tree there, replace its contents in a fresh checkout or compare the trees first so deleted upstream files do not remain. Preserve executable permissions when unpacking.
 
 Extract the patch ZIP. For each row of `BASES.tsv`, run the following from the Android root, substituting the row's path, commit, and absolute patch path. Use a clean worktree before switching revisions.
 
@@ -59,6 +59,11 @@ sha256sum lineage_blueline-ota.zip boot.img dtbo.img > SHA256SUMS.txt
 sha256sum -c SHA256SUMS.txt
 ```
 
+
+
+For a release candidate, use `lunch lineage_blueline-user` instead of `userdebug`. Configure the project signing keys locally and keep private key files out of GitHub and the release package. Leave `PRODUCT_ADB_KEYS` unset so the workstation is not authorized by the image. Check the final target files and OTA to confirm the user variant, expected signing certificates, and absence of workstation ADB keys. Android still needs the matching public signing certificates to verify packages.
+
 ## 5. Validate before distributing
 
 Keep OTA signing and recovery keys consistent across releases. See the [Evolution X unofficial signing template](https://github.com/Evolution-X/vendor_evolution-priv_keys-template). Verify that the target files contain no workstation ADB authorization or development boot loggers. Test with matching Evolution Recovery and its **Apply from ADB** menu. On a clean install, confirm first boot, brightness, and Google app launch both before and after Play services updates. Recovery status 0 verifies installation; Android boot and runtime checks are separate.
+
