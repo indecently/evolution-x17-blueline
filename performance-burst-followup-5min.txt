@@ -1,0 +1,24 @@
+SAMPLE 0 elapsed_s=0 big_cur_khz=1536000 battery_deciC=413
+SAMPLE 1 elapsed_s=15 big_cur_khz=1286400 battery_deciC=413
+SAMPLE 2 elapsed_s=30 big_cur_khz=1286400 battery_deciC=410
+SAMPLE 3 elapsed_s=45 big_cur_khz=1286400 battery_deciC=410
+SAMPLE 4 elapsed_s=60 big_cur_khz=1286400 battery_deciC=408
+SAMPLE 5 elapsed_s=75 big_cur_khz=1286400 battery_deciC=408
+SAMPLE 6 elapsed_s=90 big_cur_khz=1286400 battery_deciC=408
+SAMPLE 7 elapsed_s=105 big_cur_khz=1286400 battery_deciC=408
+SAMPLE 8 elapsed_s=120 big_cur_khz=1286400 battery_deciC=408
+SAMPLE 9 elapsed_s=135 big_cur_khz=1286400 battery_deciC=408
+SAMPLE 10 elapsed_s=150 big_cur_khz=1536000 battery_deciC=408
+SAMPLE 11 elapsed_s=165 big_cur_khz=1536000 battery_deciC=405
+SAMPLE 12 elapsed_s=180 big_cur_khz=1536000 battery_deciC=405
+SAMPLE 13 elapsed_s=195 big_cur_khz=1536000 battery_deciC=405
+SAMPLE 14 elapsed_s=210 big_cur_khz=1536000 battery_deciC=405
+SAMPLE 15 elapsed_s=225 big_cur_khz=1536000 battery_deciC=405
+SAMPLE 16 elapsed_s=240 big_cur_khz=1536000 battery_deciC=405
+SAMPLE 17 elapsed_s=255 big_cur_khz=1536000 battery_deciC=405
+SAMPLE 18 elapsed_s=270 big_cur_khz=1536000 battery_deciC=408
+SAMPLE 19 elapsed_s=285 big_cur_khz=1536000 battery_deciC=408
+SAMPLE 20 elapsed_s=300 big_cur_khz=1536000 battery_deciC=408
+TEST_COMPLETE
+
+Test context: installed build CP2A.260605.016, slot _b. Four arithmetic workers were pinned to CPUs 4–7 for 300 seconds; samples every 15 seconds; stop threshold battery sysfs temp 43.0 C. Threshold was not reached. Big-cluster current frequency samples ranged 1.2864–1.536 GHz; battery sysfs reading was 41.3 C at start and 40.8 C at end. This run began after first boot; a concurrent `top` sample showed Google Play services near 100% CPU and system_server around 42%, so background activity may affect comparison. Thermal sysfs nodes and dumpsys thermalservice were not readable from shell.

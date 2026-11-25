@@ -1,0 +1,15 @@
+SAMPLE 0 big_cur_khz=2553600 battery_deciC=380
+SAMPLE 1 big_cur_khz=2649600 battery_deciC=380
+SAMPLE 2 big_cur_khz=2649600 battery_deciC=380
+SAMPLE 3 big_cur_khz=2649600 battery_deciC=383
+SAMPLE 4 big_cur_khz=2649600 battery_deciC=385
+SAMPLE 5 big_cur_khz=2649600 battery_deciC=388
+SAMPLE 6 big_cur_khz=2649600 battery_deciC=390
+SAMPLE 7 big_cur_khz=2553600 battery_deciC=393
+SAMPLE 8 big_cur_khz=2323200 battery_deciC=393
+SAMPLE 9 big_cur_khz=2323200 battery_deciC=395
+SAMPLE 10 big_cur_khz=2323200 battery_deciC=395
+SAMPLE 11 big_cur_khz=2323200 battery_deciC=395
+SAMPLE 12 big_cur_khz=2323200 battery_deciC=400
+
+Test context: one-minute four-worker big-core load; 13 samples at 5-second intervals; battery sysfs reading 38.0 C to 40.0 C. Big-cluster current frequency started at 2.5536 GHz, peaked at 2.6496 GHz, and was 2.3232 GHz at the final sample. The subsequent five-minute run is the more sustained measurement.

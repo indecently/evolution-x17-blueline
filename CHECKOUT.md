@@ -21,16 +21,19 @@ commit. Substituting an arbitrary branch tip changes the build inputs.
 
 ## Overlay the port
 
-Save the archives outside the Android checkout. Run these commands from its root.
-Both archives contain the destination directories in their paths.
+Save the archives and checksum file outside the Android checkout. Verify the
+device snapshot before extracting it, then run these commands from the checkout
+root. The archives contain the destination directories in their paths.
 
 ```sh
+( cd /absolute/path/to/archive-directory && sha256sum -c blueline-device-source-SHA256SUMS.txt )
 unzip /absolute/path/to/blueline-device-source.zip
 tar -xzf /absolute/path/to/blueline-b1c1-kernel-source.tar.gz
 unzip /absolute/path/to/blueline-source-patches.zip -d /absolute/path/to/unpacked-patches
 ```
 
-Use the [device snapshot](blueline-device-source.zip),
+Use the [device snapshot](blueline-device-source.zip) and its
+[SHA-256 file](blueline-device-source-SHA256SUMS.txt),
 [kernel source release](https://github.com/indecently/evolution-x17-blueline/releases/tag/blueline-b1c1-source-20261124),
 and [patch bundle](blueline-source-patches.zip). Verify the kernel archive
 against the SHA-256 file on its release page before extracting it.
