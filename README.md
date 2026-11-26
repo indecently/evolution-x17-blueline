@@ -10,7 +10,8 @@ Unofficial Android 17 port for the Google Pixel 3 (blueline).
 - [Platform patches](blueline-source-patches.zip) ([SHA-256](blueline-source-patches-SHA256SUMS.txt))
 - [Recreate and verify the vendor blob fixups](VENDOR-BLOBS.md)
 
-The updated device snapshot reflects the working Android 17 tree. A development
-OTA has booted on the test Pixel 3; a clean public checkout build and a public
-release package remain unverified.
-
+These source packages match the inputs used for the 2026-11-26 release-candidate
+build. The candidate was installed through Evolution Recovery and booted on the
+test Pixel 3. A fresh build from a clean public checkout has not yet been
+verified. The B1C1 source release contains the full kernel source and its
+SHA-256 checksum.
