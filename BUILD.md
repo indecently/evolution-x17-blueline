@@ -67,3 +67,17 @@ For a release candidate, use `lunch lineage_blueline-user` instead of `userdebug
 
 Keep OTA signing and recovery keys consistent across releases. See the [Evolution X unofficial signing template](https://github.com/Evolution-X/vendor_evolution-priv_keys-template). Verify that the target files contain no workstation ADB authorization or development boot loggers. Test with matching Evolution Recovery and its **Apply from ADB** menu. On a clean install, confirm first boot, brightness, and Google app launch both before and after Play services updates. Recovery status 0 verifies installation; Android boot and runtime checks are separate.
 
+
+
+## 6. Keep release and development caches separate
+
+Reserve the default `out/` for release builds (`lineage_blueline-user`). Use `out-userdebug/` for development builds, setting `OUT_DIR` before sourcing the build environment:
+
+```bash
+export OUT_DIR="$PWD/out-userdebug"
+source build/envsetup.sh
+lunch lineage_blueline-userdebug
+mka otapackage -j2
+```
+
+In a fresh shell, `unset OUT_DIR` returns release builds to the default `out/`. Each directory needs its own initial build; later builds reuse the matching variant cache instead of repeatedly switching one tree between `userdebug` and `user`. Separate outputs do not fix missing Repo checkouts or source errors, so complete the sync and manifest check first.
