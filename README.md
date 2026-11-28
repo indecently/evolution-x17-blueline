@@ -1,17 +1,16 @@
 # Evolution X 17 for Google Pixel 3
 
-Unofficial Android 17 port for the Google Pixel 3 (blueline).
+Unofficial Android 17 source package for the Google Pixel 3 (`blueline`, SDM845).
 
-- [Pinned source checkout and patch instructions](CHECKOUT.md)
-- [Host setup and OTA build instructions](BUILD.md)
-- [Pixel 3 device tree](blueline-device-source.zip) ([SHA-256](blueline-device-source-SHA256SUMS.txt))
-- [Performance tuning and test notes](PERFORMANCE.md)
-- [Full B1C1 kernel source and checksum](https://github.com/indecently/evolution-x17-blueline/releases/tag/blueline-b1c1-source-20261124)
-- [Platform patches](blueline-source-patches.zip) ([SHA-256](blueline-source-patches-SHA256SUMS.txt))
-- [Recreate and verify the vendor blob fixups](VENDOR-BLOBS.md)
+## Current source release
 
-These source packages match the inputs used for the 2026-11-26 release-candidate
-build. The candidate was installed through Evolution Recovery and booted on the
-test Pixel 3. A fresh build from a clean public checkout has not yet been
-verified. The B1C1 source release contains the full kernel source and its
-SHA-256 checksum.
+The [2026-11-28 source release](https://github.com/indecently/evolution-x17-blueline/releases/tag/blueline-b1c1-source-20261128) contains the complete B1C1 kernel source, current device-tree snapshot, platform patch bundle, and SHA-256 files. The release is source only; it is not a ROM OTA or flashable kernel image.
+
+- [Pinned source checkout and overlay instructions](CHECKOUT.md)
+- [Host setup and build instructions](BUILD.md)
+- [Source changelog](CHANGELOG.md)
+- [Kernel source release notes](KERNEL-RELEASE-2026-11-28.md)
+- [Performance test notes](PERFORMANCE.md)
+- [Vendor blob reproduction notes](VENDOR-BLOBS.md)
+
+The source corresponds to the Android 17 build installed and booted on the development Pixel 3 on 2026-11-27. A fresh clean build from a public-only checkout has not been verified. Proprietary binaries and Google APKs are not redistributed in these source archives.
